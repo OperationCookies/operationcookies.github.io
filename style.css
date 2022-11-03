@@ -1,0 +1,28 @@
+/* #001730 #4AD7D1 #FE4A49 */
+
+body {
+    background-color: #001730;
+
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #4ad7d1;
+    font-size: 6rem;
+}
+
+h2 {
+    color: #fe4a49;
+    font-size: 4rem;
+}
+
+p {
+    color: white;
+    font-size: 3em;
+}
