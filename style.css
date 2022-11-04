@@ -1,7 +1,9 @@
-/* #001730 #4AD7D1 #FE4A49 */
+/* #D4F2D2 */
+
+/* #0f0f0f #e42349 #FFA69E #FFA552 */
 
 body {
-    background-color: #001730;
+    background-color: #0f0f0f;
 
     height: 100vh;
     padding: 0;
@@ -29,17 +31,17 @@ body {
 }
 
 h1 {
-    color: #4ad7d1;
+    color: #e42349;
     font-size: 6rem;
 }
 
 h2 {
-    color: #fe4a49;
+    color: #ffa552;
     font-size: 4rem;
 }
 
 p {
-    color: white;
+    color: #fbfbfb;
     font-size: 3rem;
 }
 
