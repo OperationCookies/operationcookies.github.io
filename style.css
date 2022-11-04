@@ -2,8 +2,121 @@
 
 /* #0f0f0f #e42349 #FFA69E #FFA552 */
 
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: hsl(0 0% 6%);
+    --border-color: hsl(0 0% 55%);
+
+    --primary-color: #ffffff;
+    --secondary-color: #ffa552;
+
+    --accent-color: #e42349;
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+span {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
 body {
-    background-color: #0f0f0f;
+    background-color: var(--bg-color);
+
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid var(--primary-color); */
+    border-radius: 30px;
+
+    /* margin: 20px; */
+}
+
+nav > .nav-section {
+    display: flex;
+    gap: 1rem;
+
+    padding: 1rem 2rem;
+    /*border: 1px solid #e42349;
+    */
+
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-title {
+    flex-basis: 100%;
+    justify-content: left;
+}
+
+#nav-title * {
+    color: var(--primary-color);
+    font-size: 3.4rem;
+}
+
+#nav-logo {
+    font-size: 1.5rem;
+}
+
+#nav-logo img {
+    width: 5rem;
+}
+
+#nav-social-logos img {
+    width: 3rem;
+    filter: invert(100%);
+}
+
+#nav-social-logos img:hover {
+    opacity: 60%;
+}
+
+#main {
+    display: flex;
+    flex-grow: 1;
+
+    /* border: 1px solid lightcoral; */
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 3rem;
+}
+
+#main div {
+    max-width: 50vw;
+}
+
+/* @media not (max-width: 1200px) {
+    #main div {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+} */
+
+strong {
+    color: var(--accent-color);
+}
+
+/* body {
+    background-color: var(--bg-color);
 
     height: 100vh;
     padding: 0;
@@ -18,9 +131,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     #container {
         flex-direction: column;
     }
@@ -28,7 +141,7 @@ body {
     img {
         max-width: 60%;
     }
-}
+} */
 
 h1 {
     color: #e42349;
@@ -45,7 +158,7 @@ p {
     font-size: 3rem;
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     h1 {
         font-size: 4rem;
     }
@@ -55,4 +168,4 @@ p {
     p {
         font-size: 2rem;
     }
-}
+} */
