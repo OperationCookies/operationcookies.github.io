@@ -81,10 +81,7 @@ function showSection(n) {
 }
 
 function nextSection() {
-    if (
-        current_section ===
-        1 + document.getElementsByClassName("section").length
-    ) {
+    if (current_section === document.getElementsByClassName("section").length) {
         return;
     }
 
