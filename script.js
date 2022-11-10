@@ -139,3 +139,5 @@ document.onkeydown = (e) => {
     }[e.key];
     callback?.();
 };
+
+document.getElementById("domain").innerText = window.location.hostname;
