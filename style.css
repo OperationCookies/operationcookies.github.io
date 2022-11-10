@@ -87,7 +87,8 @@ li::marker {
 }
 
 @media (hover: hover) {
-    .button:hover {
+    .button:hover,
+    .button:focus {
         opacity: 80%;
         cursor: pointer;
     }
@@ -267,11 +268,11 @@ nav .nav-section {
     }
 }
 
-#arrow-r span {
+#arrow-r.animate-arrow span {
     animation: arrow-animation forwards cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
 }
 
-#arrow-l span {
+#arrow-l.animate-arrow span {
     animation: arrow-animation forwards cubic-bezier(0.47, 0, 0.745, 0.715) 2s;
 }
 

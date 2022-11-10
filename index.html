@@ -535,6 +535,7 @@
                     esperienza.
                 </p>
                 <button
+                    tabindex="0"
                     onclick="stepCookieNotice()"
                     class="button"
                     id="cookie-notice-button"
@@ -545,11 +546,19 @@
         </div>
 
         <div id="arrows-container">
-            <div onclick="prevSection()" class="arrow" id="arrow-l">
+            <div
+                onclick="prevSection()"
+                class="arrow animate-arrow"
+                id="arrow-l"
+            >
                 <span>➜</span>
             </div>
             <div id="arrows-spacing"></div>
-            <div onclick="nextSection()" class="arrow" id="arrow-r">
+            <div
+                onclick="nextSection()"
+                class="arrow animate-arrow"
+                id="arrow-r"
+            >
                 <span>➜</span>
             </div>
         </div>
@@ -586,7 +595,7 @@
         </nav>
 
         <div id="main">
-            <div class="shown" id="0">
+            <div class="section shown" id="0">
                 <h2>Si mangiano?</h2>
                 <p>
                     I cookie sono frammenti di <strong>dati</strong> memorizzati
@@ -2093,7 +2102,7 @@
                     dell'utente informandolo di quali tipi di cookie vengano
                     usati e <strong>vieta</strong> pratiche come i
                     <strong>cookie wall</strong>, che bloccano l'uso del sito
-                    senza il cosenso ai cookie non essenziali.
+                    senza il consenso ai cookie non essenziali.
                 </p>
             </div>
 

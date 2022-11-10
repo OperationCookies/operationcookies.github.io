@@ -14,6 +14,14 @@ function stepCookieNotice() {
         // alert("Closed modal");
         setCookie("has-accepted", "1", 30);
         closeModal();
+
+        document.querySelectorAll(".arrow").forEach((e) => {
+            e.classList.remove("animate-arrow");
+            setTimeout(() => {
+                console.log(e);
+                e.classList.add("animate-arrow");
+            }, 2002);
+        });
         return;
     }
 
@@ -38,6 +46,7 @@ function hideModal() {
 function closeModal() {
     const pane = document.getElementById("white-pane");
     pane.classList.add("animation-flash");
+
     setTimeout(() => {
         pane.classList.remove("animation-flash");
     }, 2000);
@@ -70,9 +79,9 @@ function getCookie(cname) {
     return "";
 }
 
-function showEnd() {
-    document.getElementById("modal-container1").classList.add("shown");
-}
+// function showEnd() {
+//     document.getElementById("modal-container1").classList.add("shown");
+// }
 
 let current_section = 0;
 
@@ -81,7 +90,10 @@ function showSection(n) {
 }
 
 function nextSection() {
-    if (current_section === document.getElementsByClassName("section").length) {
+    if (
+        current_section ===
+        document.getElementsByClassName("section").length - 1
+    ) {
         return;
     }
 
@@ -90,9 +102,9 @@ function nextSection() {
     element.classList.add("animate-away");
     element.classList.remove("shown");
 
-    if (current_section === document.getElementsByClassName("section").length) {
-        showEnd();
-    }
+    // if (current_section === document.getElementsByClassName("section").length - 1) {
+    //     showEnd();
+    // }
 
     setTimeout(() => {
         element.classList.remove("animate-away");
